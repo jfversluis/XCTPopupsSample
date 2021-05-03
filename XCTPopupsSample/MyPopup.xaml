@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<xct:Popup
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    Size="300,300"
+    IsLightDismissEnabled="False"
+    x:Class="XCTPopupsSample.MyPopup">
+
+    <StackLayout>
+        <Label Text="Hello from popup!" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+
+        <Button Text="Close me" Clicked="Button_Clicked" />
+    </StackLayout>
+</xct:Popup>

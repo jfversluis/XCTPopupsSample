@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.CommunityToolkit.Extensions;
 using Xamarin.Forms;
 
 namespace XCTPopupsSample
@@ -13,6 +14,11 @@ namespace XCTPopupsSample
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        void Button_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.ShowPopup(new MyPopup());
         }
     }
 }
